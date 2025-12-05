@@ -41,13 +41,23 @@ Experiment with colors, typography, spacing, and component styles.
   --white: #fff;
   --dark: #030956;
   --black: #000000;
-  --pourple: #2e2f73;
+  --purple: #2e2f73;
   --blue: #3271e3;
   --pink: #de5d9b;
-
-
+  --light-pink: #ccd1ea;
+  --lightpurple: #a583c6;
 
 }
+
+
+
+/* Reusable CSS classes */
+
+.pink { color: var(--pink); }
+.blue { color: var(--blue); }
+.purple { color: var(--purple); }
+.light-pink { color: var(--light-pink); }
+.lightpurple { color: var(--lightpurple); }
 
 
 
@@ -58,19 +68,27 @@ Experiment with colors, typography, spacing, and component styles.
 
 body {
   color: var(--primary-80);
+  background-color: #030956;
   /* font-family is set in framework.css but you can override it here if needed */
 }
 
 /* Heading Styles - Customize sizes, colors, spacing */
 h1, h2, h3, h4, h5, h6 { 
   line-height: 1.1;
-  color: var(--primary-80);
+  color: var(--white);
   /* Add your custom heading styles here */
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+
 }
 
 h1 { 
   font-size: 90px;
   /* Try adding: font-weight, color, text-transform, etc. */
+  text-transform: uppercase;
+  line-height: 0.8;
 }
 
 h2 { 
@@ -99,7 +117,7 @@ h6 {
 p {
   font-size: 18px;
   line-height: 1.5;
-  color: var(--primary-80);
+  color: var(--light-pink);
   /* Try adjusting: line-height, letter-spacing, margin-bottom */
 }
 
@@ -235,7 +253,7 @@ header nav a.active {
 
 /* Light background wrapper - extends to viewport edges */
 .light-bg-wrapper {
-  background: var(--grey);
+  background: var(--purple);
   width: 100vw;
   margin-left: calc(-50vw + 50%);
   margin-right: calc(-50vw + 50%);
@@ -246,7 +264,7 @@ header nav a.active {
 /* Callout */
 
 .callout {
-  background: var(--grey);
+  background: var(--purple);
 }
 
 .callout div {
@@ -347,11 +365,11 @@ hr {
 
 /* Icon with Text Component */
 .icon-with-text i {
-  background: var(--grey);
+  background: var(--purple);
   padding: 17px 16px 23px;
   border-radius: 200px;
   font-size: 30px;
-  color: var(--primary-80);
+  color: var(--blue);
   /* Try customizing: colors, sizing, border-radius, box-shadow */
 }
 
