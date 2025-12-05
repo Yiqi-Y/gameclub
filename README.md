@@ -1,1 +1,2 @@
-# gameclub
+# hackedemics
+Website for Game Club
